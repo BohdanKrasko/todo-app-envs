@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v0.1.3"
+  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v0.1.6"
 }
 
 remote_state {
@@ -47,6 +47,7 @@ inputs = {
   aws_route53_record_clodfront_name = "prod.ekstodoapp.tk"
   prod_json_go = "prod_go.json"
   s3_bucket_name = "prod-s3-bucket-frontend-todo-app-www.ekstodoapp.tk"
+  go_image = "030209dbcac4.ngrok.io/repository/krasko:wed"
 
 
 }
