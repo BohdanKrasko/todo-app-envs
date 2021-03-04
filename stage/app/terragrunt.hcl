@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v0.1.6"
+  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v0.1.7"
 }
 
 remote_state {
