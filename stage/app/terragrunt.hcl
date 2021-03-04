@@ -48,4 +48,5 @@ inputs = {
   prod_json_go = "stage_go.json"
   s3_bucket_name = "stage-s3-bucket-frontend-todo-app-www.ekstodoapp.tk"
   go_image = "030209dbcac4.ngrok.io/repository/krasko:wed"
+  env = "stage"
 }
