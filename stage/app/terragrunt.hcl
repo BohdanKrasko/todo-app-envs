@@ -49,7 +49,7 @@ inputs = {
   s3_bucket_name = "stage-s3-bucket-frontend-todo-app-www.ekstodoapp.tk"
   go_image = "030209dbcac4.ngrok.io/repository/krasko:wed"
   env = "stage"
-  acm_certificate_arn = "arn:aws:acm:us-east-1:882500013896:certificate/fbfa39bf-bdff-43d2-b750-e2d013582462"
+  acm_certificate_arn = "arn:aws:acm:us-east-1:882500013896:certificate/0b434d20-a495-4105-b945-c6b85f17ec46"
   lambda_arn = "arn:aws:lambda:us-east-1:882500013896:function:add_security_headers:2"
   secret_manager_arn = "arn:aws:secretsmanager:us-east-1:882500013896:secret:nexus_cred-b6Nv6H"
 }
