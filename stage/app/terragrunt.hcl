@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v0.1.8"
+  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v1.0.0"
 }
 
 remote_state {
@@ -49,4 +49,7 @@ inputs = {
   s3_bucket_name = "stage-s3-bucket-frontend-todo-app-www.ekstodoapp.tk"
   go_image = "030209dbcac4.ngrok.io/repository/krasko:wed"
   env = "stage"
+  acm_certificate_arn = "arn:aws:acm:us-east-1:882500013896:certificate/fbfa39bf-bdff-43d2-b750-e2d013582462"
+  lambda_arn = "arn:aws:lambda:us-east-1:882500013896:function:hello-js:4"
+  secret_manager_arn = "arn:aws:secretsmanager:us-east-1:882500013896:secret:nexus-m8ETfq"
 }
