@@ -45,7 +45,7 @@ inputs = {
   aws_ecs_service_mongo_name = "stage-mongo"
   aws_route53_record_go_name = "stage.go.ekstodoapp.tk"
   aws_route53_record_clodfront_name = "stage.ekstodoapp.tk"
-  prod_json_go = "stage_go.json"
+
   s3_bucket_name = "stage-s3-bucket-frontend-todo-app-www.ekstodoapp.tk"
   go_image = "030209dbcac4.ngrok.io/repository/krasko:wed"
   env = "stage"
