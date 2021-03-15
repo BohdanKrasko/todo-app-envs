@@ -18,12 +18,7 @@ remote_state {
         encrypt        = true
         dynamodb_table = "terraform-state-lock-dynamo"
         
-        required_providers = {
-          aws = {
-            sourse  = "hashicorp/aws"
-            version = "~> 3.23.0"
-          }
-        }
+        
     }
 
 }
@@ -36,6 +31,12 @@ provider "aws" {
     region                  = "us-east-1"
     shared_credentials_file = "~/.aws/credentials"
     profile                 = "default"
+    required_providers {
+          aws = {
+            sourse  = "hashicorp/aws"
+            version = "~> 3.23.0"
+          }
+        }
 }
     EOF
 }
