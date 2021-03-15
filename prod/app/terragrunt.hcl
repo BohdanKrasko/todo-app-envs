@@ -1,7 +1,5 @@
 terraform {
   source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v1.3.1"
-  
-  
 }
 
 remote_state {
@@ -16,11 +14,8 @@ remote_state {
         key = "${path_relative_to_include()}/terraform.tfstate"
         region         = "us-east-1"
         encrypt        = true
-        dynamodb_table = "terraform-state-lock-dynamo"
-        
-        
+        dynamodb_table = "terraform-state-lock-dynamo"   
     }
-
 }
 
 generate "provider" {
