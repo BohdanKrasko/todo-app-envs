@@ -18,7 +18,7 @@ remote_state {
         encrypt        = true
         dynamodb_table = "terraform-state-lock-dynamo"
         
-        required_providers {
+        required_providers = {
           aws = {
             sourse  = "hashicorp/aws"
             version = "~> 3.23.0"
