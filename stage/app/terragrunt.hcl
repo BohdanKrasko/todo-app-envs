@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v1.3.0"
+  source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v1.3.1"
 }
 
 remote_state {
@@ -23,6 +23,15 @@ generate "provider" {
         path = "provider.tf"
         if_exists = "overwrite"
         contents = <<EOF
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.23.0"
+    }
+  }
+}
+
 provider "aws" {
     region                  = "us-east-1"
     shared_credentials_file = "~/.aws/credentials"
