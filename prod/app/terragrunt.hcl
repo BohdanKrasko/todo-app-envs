@@ -1,5 +1,12 @@
 terraform {
   source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v1.3.0"
+  
+  required_providers {
+    aws = {
+      sourse  = "hashicorp/aws"
+      version = "~> 3.23.0"
+    }
+  }
 }
 
 remote_state {
