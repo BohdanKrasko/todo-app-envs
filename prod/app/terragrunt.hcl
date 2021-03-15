@@ -1,12 +1,7 @@
 terraform {
   source = "git@github.com:BohdanKrasko/infrastructure-modules.git?ref=v1.3.0"
   
-  required_providers {
-    aws = {
-      sourse  = "hashicorp/aws"
-      version = "~> 3.23.0"
-    }
-  }
+  
 }
 
 remote_state {
@@ -22,6 +17,13 @@ remote_state {
         region         = "us-east-1"
         encrypt        = true
         dynamodb_table = "terraform-state-lock-dynamo"
+        
+        required_providers {
+          aws = {
+            sourse  = "hashicorp/aws"
+            version = "~> 3.23.0"
+          }
+        }
     }
 
 }
